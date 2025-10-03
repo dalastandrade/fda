@@ -1,0 +1,50 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "251516b3d8712045118311afadec6804"
+name = "FirstDay"
+handle = "firstday"
+application_url = "https://firstday-prod-c5bfbdb2790a.herokuapp.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-b0c24de6.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_cart_transforms,write_discounts,write_discounts_allocator_functions,write_products,read_products"
+
+[auth]
+redirect_urls = [
+  "https://firstday-prod-c5bfbdb2790a.herokuapp.com/auth/callback",
+  "https://firstday-prod-c5bfbdb2790a.herokuapp.com/auth/shopify/callback",
+  "https://firstday-prod-c5bfbdb2790a.herokuapp.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/customers/data_request"
+  compliance_topics = [ "customers/data_request" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/customers/redact"
+  compliance_topics = [ "customers/redact" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/shop/redact"
+  compliance_topics = [ "shop/redact" ]
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[app_proxy]
+url = "https://firstday-prod-c5bfbdb2790a.herokuapp.com/api"
+subpath = "portal"
+prefix = "apps"
+
+[pos]
+embedded = false

@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE")
+  relationMode      = "prisma"
+}
+
+model Session {
+  id            String    @id
+  shop          String    @db.Text
+  state         String    @db.Text
+  isOnline      Boolean   @default(false)
+  scope         String?   @db.Text
+  expires       DateTime?
+  accessToken   String    @db.Text
+  userId        BigInt?
+  accountOwner  Boolean   @default(false)
+  collaborator  Boolean?  @default(false)
+  email         String?   @db.Text
+  emailVerified Boolean?  @default(false)
+  firstName     String?   @db.Text
+  lastName      String?   @db.Text
+  locale        String?   @db.Text
+}
+
+model subscriptionData {
+  id                    Int    @id @default(autoincrement())
+  assignedPricingPolicy String @db.Text
+  billingPolicy         String @db.Text
+  createdAt             String @db.Text
+  currencyCode          String @db.Text
+  customAttributes      String @db.Text
+  customer              String @db.Text
+  customerLtv           String @db.Text
+  customerPaymentMethod String @db.Text
+  deliveryMethod        String @db.Text
+  deliveryPrice         String @db.Text
+  discounts             String @db.Text
+  isInDunning           String @db.Text
+  lastChargeDate        String @db.Text
+  lineCount             String @db.Text
+  lines                 String @db.Text
+  nextBillingDate       String @db.Text
+  scheduledBillingDate  String @db.Text
+  sellingPlanGroupData  String @db.Text
+  shopifyCustomerId     String @db.Text
+  shopifyCustomerEmail  String @db.Text
+  shopifyOrders         String @db.Text
+  status                String @db.Text
+  subscriptionId        String @db.Text
+  subscriptionIdString  String @unique
+  subscriptionLtv       String @db.Text
+  updatedAt             String @db.Text
+}
+
+model Test {
+  id        Int    @id @default(autoincrement())
+  updatedAt String @db.Text
+}

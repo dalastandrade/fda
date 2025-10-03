@@ -1,0 +1,21 @@
+api_version = "2025-04"
+
+[[extensions]]
+name = "t:name"
+handle = "firstday-discounts"
+type = "function"
+
+description = "t:description"
+
+  [[extensions.targeting]]
+  target = "purchase.product-discount.run"
+  input_query = "src/run.graphql"
+  export = "run"
+
+  [extensions.build]
+  command = ""
+  path = "dist/function.wasm"
+
+  [extensions.ui.paths]
+  create = "/app/firstday-discounts/:functionId/new"
+  details = "/app/firstday-discounts/:functionId/:id"

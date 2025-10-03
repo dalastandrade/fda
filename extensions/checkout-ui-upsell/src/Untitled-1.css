@@ -1,0 +1,1186 @@
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+   font-family: 'Poppins', sans-serif;
+                :root {
+                  --main-color: #000000;
+                }
+                a {
+    color: #000000;}
+    h2 {
+      color:#000000;
+    }
+    .earlyaccess {
+      color:red;
+      line-height:1.2 !important;
+      font-weight:600;
+    }
+    .bfprice {
+      color:red;
+      display:none;
+    }
+    .credittext {
+      color:red;
+      max-width:80%;
+      border: 1px dashed red;
+      padding:5px;
+      margin:5px auto;
+      line-height:1.2;
+      display:none;
+    }
+    .entrytowin {
+      display:none;
+    }
+    .evergreen {
+      display:inline;
+    }
+                .countdown-mob {
+                  background: #f49c07;
+                  margin-top: 10px;
+                  font-size: 16px;
+                  border: 1px solid #000000;
+                  margin-bottom: 20px;
+                  padding: 8px 10px;
+                  color: #000000;
+                  border-radius: 10px;
+                  text-align: left;
+                }
+                .countdown-mob .countdown-inner .countdown-img {
+                  float: left;
+                  height: 20px;
+                  margin-right: 6px;
+                  top: 4px;
+                  margin-top: -2px;
+                }
+                .countdown-mob .countdown-inner .countdown-text
+                {
+                  padding-left: 25px;
+                }
+                .es_variant-row{
+                  border-top: 1px solid #000000;
+                  padding-top: 15px;
+                  margin-bottom: 0;
+                }
+                .es_variant-heading h2{
+                  font-size: 18px;
+                  margin: 0 0 15px 0;
+                  color:#000000;
+                }
+                .discount-bar {
+                  font-size:14px;
+                  margin-top:-5px;
+                  margin-bottom:15px;
+                  color:#000000;
+                }
+                .es_variant-options {
+                  display: inline-block;
+                  width: 100%;
+                }
+                .es_discount_badge {
+                  background: #f49c07;
+                  color: #000000;
+                  padding: 4px 15px;
+                  font-size: 11px;
+                  float: right;
+                  border-radius: 100px;
+                  margin-top: -3px
+                }
+                .es_variant-options .es_variant-option.es_option-radio:before {
+                  content: "";
+                  display: inline-block;
+                  width: 17px;
+                  height: 17px;
+                  float: left;
+                  border: solid 2px #000000;
+                  border-radius: 5em;
+                  margin-right: 8px;
+                        margin-top:4px
+                }
+                .es_variant-options .es_variant-option.es_option-radio.active:after {
+                    content: "";
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    float: left;
+                    border-radius: 5em;
+                    margin-right: 8px;
+                    position: absolute;
+                    left: 0;
+                    background: #000000;
+                    margin-left: 13.6px;
+                    margin-top: 7px;
+                }
+                .es_variant-option.es_option-radio.active {
+                  background-color: #E4F5FF;
+                  border-radius: 100px;
+                }
+                .es_variant-options .es_variant-option.es_option-radio {
+                  display: block;
+                  padding: 10px;
+                  font-weight: 600;
+                  margin-bottom: 4px;
+                  position: relative;
+                  font-size: 14px;
+                }
+                .es_variant-options {
+                  display: inline-block;
+                  width: 100%;
+                }
+                .es_variant-options .es_variant-option.es_option-swatch {
+                  width: calc(48% - 7px);
+                  border: solid 1px #000000;
+                  background: #fff;
+                  border-radius: 4px;
+                  padding: 15px 5px;
+                  margin-bottom: 10px;
+                  display: flex;
+                  text-align: center;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                  overflow: hidden;
+                }
+                .es_variant-options .es_variant-option.es_option-swatch.active {
+                  background: #E4F5FF;
+                  border: 1px dashed #000000;
+                  box-shadow: #000000 0 0 0 4px;
+                }
+                .es_variant-options .es_variant-option.es_option-swatch:nth-child(4n+1),
+                .es_variant-options .es_variant-option.es_option-swatch:nth-child(4n+2) {
+                  float: left
+                }
+                .es_variant-options .es_variant-option.es_option-swatch:nth-child(4n),
+                .es_variant-options .es_variant-option.es_option-swatch:nth-child(4n+3) {
+                  float: right
+                }
+                a.es_variant-option.es_option-swatch.es_badge-best_deal.active {
+                  color: #fff;
+                }
+                a.es_variant-option.es_option-swatch.checkout-select-variant.active {
+                  color: #000000!important;
+                }
+                .es_variant-options .es_variant-option.es_option-swatch label {
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 20px;
+                }
+                span.es_each_price {
+                  font-size: 12px;
+                  margin-top: 4px;
+                  display: block;
+                  text-decoration:line-through;
+                }
+               
+                .es_variant-options .es_variant-option .es_shipping_text {
+                  font-size: 10px;
+                  font-weight: 700;
+                  margin-top: 2px;
+                  display: block;
+                }
+                .es_variant-options .es_variant-option, .es_variant-options .es_variant-option * {
+                  cursor: pointer;
+                }
+                .es_product-image_row {text-align: center; }
+                .es_save_text {font-size: 14px; color: #000; font-weight: 600; padding: 8px; border-radius: 4px; text-transform: uppercase; font-weight: 700; }
+                .es_save_text {background-color: #fff4c6; color: #000!important; border: 2px dashed #000;text-align: center; }
+                .es_reviews_row {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.es_product-price {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.es_product-price .es_sell-price {
+    width: 50%;
+    float: left;
+    font-weight: 600;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: left;
+Color:red;
+
+
+
+}
+.bfprice {
+  font-size:16px;
+  padding-bottom:15px;
+  font-weight:600;
+}
+.es_product-price .es_old-price {
+    float: left;
+    font-weight: 600;
+    color: #000000;
+    padding-top: 0;
+    text-align: left;
+Margin-right:10px;
+}
+.es_old-price .money {
+  text-decoration:line-through;
+    font-size: 16px;
+}
+.es_saving_percent {
+    margin-left: 5px;
+    background: rgba(240,243,249,1);
+    color: #000;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+span.cups_per_bottle {
+    font-size: 13px;
+    background-color: #000000;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: 500;
+    float: right;
+}
+.es_variant-options .es_variant-option.es_option-swatch.es_badge-best_deal:before {
+    content: "";
+    display: inline-block;
+    background: #000000;
+    width: 35px;
+    height: 25px;
+    position: absolute;
+    left: -47px;
+    top: -34px;
+    color: #fff;
+    font-size: 10px;
+    padding: 44px 30px 0 30px;
+    transform: rotate(
+-45deg
+);
+    line-height: 1;
+    font-weight: 800;
+}
+.es_miracle_landing p, .es_miracle_landing span{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif}
+.es_miracle_landing h1, .es_miracle_landing h2, .es_miracle_landing h3, .es_miracle_landing h4, .es_miracle_landing h5, .es_miracle_landing h6, .es_miracle_landing label {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+}
+.es_product-form {
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+button, #lp-pom-button-13
+{
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    font-color: #fff;
+        display: block;
+    border-style: none;
+    border-radius: 10px;
+   
+    width: 100%
+    height: 51px;
+   background: #000000;
+    box-shadow: none;
+    text-shadow: none;
+    text-color: #ffffff;
+    border-width: undefinedpx;
+    border-color: #undefined;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: Poppins;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+strong {
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+#lp-pom-button-13 {
+  color: #fff;
+}
+
+.es_variant-options .es_variant-option.es_option-radio > label {
+  pointer-events: none;
+}
+.es_save_text {
+  display:none;
+}
+.es_saving_percent {
+  display:none;
+}
+
+
+
+//Cross sell css
+.freq_box {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.freq_box_container {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.above_text {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.see_bought {
+    display: -webkit-inline-box;
+    line-height: 0;
+    display: flex;
+    text-align: -webkit-center;
+    margin: 0 auto;
+    width: 100%;
+    place-content: center;
+}
+
+p.people_saw {
+    font-size: 13px;
+    color: #000000;
+}
+
+.badge-text {
+  font-size: 13px;
+}
+
+.frequently-bought-together-item-container {
+    display: block;
+    padding: 5px 0 8px 0;
+}
+
+p.sub_otp {
+    color: #2c3e50;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    /* line-height: 1; */
+    text-align: center;
+    height: 21px;
+}
+
+.frequently-bought-together-item-details {
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.image_container img {
+    /* object-fit: contain; */
+    /* transform: translateX(-20px); */
+    /* transform: translate(-20px, -10px); */
+    width: 100%;
+    position: relative;
+}
+
+.image_container {
+    /* width: 50%; */
+    border-radius: 10px;
+    /* contain: content; */
+    border: 1px solid #ff6f4c;
+    /* max-height: 100px; */
+    /* width: 100%; */
+    /* height: 100px; */
+    padding-bottom: 19%;
+    position: relative;
+    contain: content;
+    aspect-ratio: 1;
+    /* max-width: 100px; */
+    /* max-height: 100px; */
+    height: 0;
+    width: 20%;
+}
+
+.product_info_container {
+    margin-left: 20px;
+}
+
+.heading_third {
+    font-size: clamp(17px, 2.3vw + 0.1rem, 22px) !important;
+    color: #000000;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.benefittext {
+    line-height: 1.4;
+    letter-spacing: .4px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    color: #000000;
+}
+
+.benefittext img {
+    width: 60px;
+    /* margin-top: 5px !important; */
+    border: none !important;
+    border-radius: 2px;
+    height: 11px;
+}
+
+.price__pro {
+    line-height: 1.3;
+    display: flex;
+    justify-content: space-between;
+}
+
+span.pp_strike {
+    font-weight: 500;
+    color: #000000;
+}
+
+span.pp_real {
+    font-weight: bold;
+    color: #ff6f4c;
+}
+
+.pp_real_price {
+    color: #6677aa;
+    font-weight: 500;
+}
+
+.checkbox_container {
+  flex: 0.15;
+  background: #f2fbfe;
+  border-radius: 15px;
+  height: 35px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.checkbox_flex {
+  display: flex;
+  align-items: center;
+  margin-inline-start: 10px;
+  pointer-events: none;
+}
+
+.extra_pro_checkbox {
+  width: 18px !important;
+  height: 18px;
+  /* margin: 0; */
+  position: relative;
+  vertical-align: bottom;
+  display: inline-block;
+  /* margin-inline-end: 0.5rem; */
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+input#extra_pro {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    outline: none;
+    content: none;
+}
+
+.product-info-text {
+    font-size: clamp(10px, 0.9vw + 0.1rem, 14px) !important;
+}
+
+.review-text {
+  font-size: clamp(10px, 0.9vw + 0.1rem, 14px) !important;
+}
+
+.reviewstars {
+  display: flex;
+  align-items: center;
+}
+
+p.prev_p {
+    margin: 0;
+    border-radius: 30px;
+    background: #000000;
+    color: white;
+    font-weight: 900;
+    /* width: 50%; */
+    padding: 5px 15px;
+    padding-top: 3px;
+}
+
+.price-badge {
+    align-items: baseline;
+    display: flex;
+    top: 0;
+    line-height: 1;
+    justify-content: flex-end;
+    font-family: 'sofia-pro', arial, sans-serif;
+    font-size: 14px;
+}
+
+.see_bought.badge {
+    margin: 0 auto;
+    border-radius: 30px;
+    background: #000000;
+    color: white;
+    font-weight: 900;
+    width: 50%;
+    padding: 5px 15px;
+    padding-top: 3px;
+    /* position: absolute; */
+    transform: translateY(20px);
+}
+
+.checkbox_text {
+  color: #000000;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 10px;
+  letter-spacing: 0.4px;
+}
+
+span.review-text {
+    margin-left: 4px;
+    margin-top: 0.5px;
+}
+
+.checkbox_flex > * {
+    pointer-events: none;
+}
+
+.checkmark > svg {
+    position: absolute;
+    transform: translateX(4px);
+}
+
+
+
+
+@media (max-width: 676px) {
+  .image_container {
+      /* width: 50%; */
+      border-radius: 10px;
+      /* contain: content; */
+      border: 1px solid #ff6f4c;
+      /* max-height: 100px; */
+      /* width: 100%; */
+      /* height: 100px; */
+      padding-bottom: 33%;
+      position: relative;
+      contain: content;
+      aspect-ratio: 1;
+      /* max-width: 100px; */
+      /* max-height: 100px; */
+      height: 0;
+      width: unset;
+  }
+
+  .freq_box_container { 
+    padding: 25px 10px 10px 10px;
+  }
+
+  .product_info_container {
+    margin-left: 10px;
+  }
+
+  .see_bought.badge {
+    width: 70%;
+  }
+
+  .benefittext {
+    line-height: 1.2;
+  }
+
+  p.people_saw {
+    font-size: 10px;
+    color: #000000;
+  }
+
+  span.review-text {
+    margin-left: 4px;
+    margin-top: 0.5px;
+  }
+}
+</style>
+
+
+
+
+
+
+
+  <div class="es_miracle_landing">
+  <form class="es_product-form custom_form" id="es_product-form1" action="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=1%26items[][selling_plan]=2882076770%26return_to=/checkout" name="quantity" value="2_bottle_subscription">
+    <div class="es_variant-container">
+      <!-- Select Frequency radio section start -->
+      <div class="es_variant-row">
+        <div class="es_variant-heading">
+          <h2>1. Select Frequency</h2>
+          <div class="discount-bar">Select one-time or monthly subscription. You get a discount for subscribing AND buying more with our popular family-friendly discounting. <strong><i>PLUS, Subscribers get Free Shipping</i></strong> :)</div>
+        </div>
+          <div class="es_variant-options es_frequency">
+          <a class="es_variant-option es_option-radio" value="one_time">
+              <label for="one-time">One-time</label><label class="es_discount_badge one-time"><span class="evergreen">UP TO 36% OFF</span><span class="entrytowin">UP TO 40% OFF</span></label>
+          </a>
+          <a class="es_variant-option es_option-radio active" value="javy">
+            <label for="javy">Sub &amp; Save<span class="entrytowin"> + $25 BONUS</span></label><label class="es_discount_badge javy"><span class="evergreen">UP TO 47% OFF</span><span class="entrytowin">UP TO 51% OFF</span></label>
+          </a>
+        </div>
+      </div>
+      <!-- Select Frequency radio section End --> 
+  
+      <div class="es_variant-row">
+        <div class="es_variant-heading">  
+          <h2>2. Select Quantity <span class="cups_per_bottle">30 servings per bottle</span></h2>
+        </div>
+         <!-- Select Quantity swatch section Start --> 
+        <div class="es_variant-options es_package">  
+          <!-- Url for redirect checkout buttton -->
+          <a style="display: none;" class="quantity-one_time es_variant-option es_option-swatch checkout-select-variant one_time es_badge-best_deal" url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=false%26attributes[_is_one_time_purchase]=true%26attributes[_method]=shipping%26items[][quantity]=1%26return_to=/checkout" value="2_bottle_one_time" >
+            <label for="2_bottle">1 Bottle </label>
+            <span class="es_each_price" style="text-decoration:none; opacity:0;">$39 each</span>
+                                             <span class="earlyaccess" style="color:#000000;">$39 each</span>
+
+            <span class="es_shipping_text otpshipping">FREE SHIPPING</span>
+          </a>
+  
+          <a id="subscription_quantity" class="quantity-subscription es_variant-option es_option-swatch checkout-select-variant one_time active es_badge-best_deal"  url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=1%26items[][selling_plan]=2882076770%26return_to=/checkout" name="quantity" value="2_bottle_subscription" >
+            <label for="2_bottle_subscription">1 Bottle </label>
+            <span class="es_each_price">$39 each</span> 
+                                      <span class="earlyaccess">$33.15 each</span>
+                                                                            <span class="credittext">🎁 Plus $25 For Future Order</span>
+
+
+            <span class="es_shipping_text">FREE SHIPPING</span>
+          </a>
+  
+          <a id="one_time_quantity" style="display: none;" class="quantity-one_time es_variant-option es_option-swatch checkout-select-variant one_time"  url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=false%26attributes[_is_one_time_purchase]=true%26attributes[_method]=shipping%26items[][quantity]=2%26return_to=/checkout" value="1_bottle_one_time" >
+            <label for="1_bottle">2 Bottles  </label>
+            <span class="es_each_price">$39 each</span>
+                                       <span class="earlyaccess">$37.05 each</span>
+
+            <span class="es_shipping_text otpshipping">FREE SHIPPING</span>
+          </a>
+  
+          <a class="quantity-subscription es_variant-option es_option-swatch checkout-select-variant one_time" url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=2%26items[][selling_plan]=2882076770%26return_to=/checkout" value="1_bottle_subscription" >
+            <label for="1_bottle_subscription">2 Bottles  </label>
+            <span class="es_each_price">$39 each</span> 
+                                        <span class="earlyaccess">$31.20 each</span>
+                                                                              <span class="credittext">🎁 Plus $25 For Future Order</span>
+
+
+            <span class="es_shipping_text">FREE SHIPPING</span>
+          </a>
+  
+           <a style="display: none;" class="quantity-one_time es_variant-option es_option-swatch checkout-select-variant one_time" url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=false%26attributes[_is_one_time_purchase]=true%26attributes[_method]=shipping%26items[][quantity]=3%26return_to=/checkout" value="3_bottle_one_time" >
+            <label for="3_bottle">3 Bottles </label>
+            <span class="es_each_price">$39 each</span>
+                                         <span class="earlyaccess">$35.10 each</span>
+
+            <span class="es_shipping_text otpshipping">FREE SHIPPING</span>
+          </a>
+  
+          <a class="quantity-subscription es_variant-option es_option-swatch checkout-select-variant one_time" url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=3%26items[][selling_plan]=2882076770%26return_to=/checkout" name="quantity" value="3_bottle_subscription" >
+            <label for="3_bottle_subscription">3 Bottles </label>
+            <span class="es_each_price">$39 each</span>
+                                       <span class="earlyaccess">$29.25 each</span>
+                                                                             <span class="credittext">🎁 Plus $25 For Future Order</span>
+
+
+            <span class="es_shipping_text">FREE SHIPPING</span>
+          </a>
+  
+          <a style="display: none;" class="quantity-one_time es_variant-option es_option-swatch checkout-select-variant one_time" url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=false%26attributes[_is_one_time_purchase]=true%26attributes[_method]=shipping%26items[][quantity]=4%26return_to=/checkout" value="4_bottle_one_time" >
+            <label for="4_bottle">4 Bottles</label>
+            <span class="es_each_price">$39 each</span>
+                                                 <span class="earlyaccess">$33.15 each</span>
+
+            <span class="es_shipping_text otpshipping">FREE SHIPPING</span>
+          </a>
+  
+          <a class="quantity-subscription es_variant-option es_option-swatch checkout-select-variant one_time" url="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=4%26items[][selling_plan]=2882076770%26return_to=/checkout" value="4_bottle_subscription" >
+            <label for="4_bottle_subscription">4 Bottles </label>
+            <span class="es_each_price">$39 each</span>
+                                                 <span class="earlyaccess">$27.30 each</span>
+                                                                                       <span class="credittext">🎁 Plus $25 For Future Order</span>
+
+
+            <span class="es_shipping_text">FREE SHIPPING</span> 
+          </a>
+  
+          </div>
+          <!-- Select Quantity swatch section End --> 
+          <!-- price section Start --> 
+            <div class="price_section 2_bottle_one_time">
+              <!-- Save price Text -->
+              <div class="es_save_text"><span>Save $6.00<span class="fsmsg"> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                  <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">39.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">39.00</span><span class="es_saving_percent">8% OFF</span></span>
+                </div>
+              </div>
+               <div class="bfprice">
+               $27.30 when you use code FRESHSTART
+                </div>
+
+            </div>
+            <div class="price_section 1_bottle_one_time" style="display: none;">
+               <!-- Save price Text -->
+              <div class="es_save_text"><span class="fsmsg">FREE SHIPPING</span></div>
+              <div class="es_product-price">
+                <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">78.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">74.10</span><span class="es_saving_percent">0% OFF</span></span>
+                  
+                </div>
+                
+              </div>
+              <div class="bfprice">
+               $52.26 when you use code FRESHSTART
+                </div>
+
+            </div>
+            <div class="price_section 3_bottle_one_time" style="display: none;">
+              <div class="es_save_text"><span>Save $12.00<span class="fsmsg"> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                  <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">117.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">105.30</span><span class="es_saving_percent">10% OFF</span></span>
+                </div>
+              </div>
+                <div class="bfprice">
+               $73.71 when you use code FRESHSTART
+                </div>
+             
+            </div>
+            <div class="price_section 4_bottle_one_time" style="display: none;">
+              <div class="es_save_text"><span>Save $24.00<span class="fsmsg"> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                 <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">156.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">132.60</span><span class="es_saving_percent">15% OFF</span></span>
+                </div>
+              </div>
+                <div class="bfprice">
+               $93.60 when you use code FRESHSTART
+                </div>
+              
+            </div>
+            <div class="price_section 2_bottle_subscription" style="display: none;">
+              <div class="es_save_text"><span>Save $16.80<span> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">39.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">33.15</span><span class="es_saving_percent">22% OFF</span></span>
+                </div>
+              </div>
+              <div class="bfprice">
+               $23.40 when you use code FRESHSTART
+              
+                </div>
+             
+            </div>
+            <div class="price_section 1_bottle_subscription" style="display: none;">
+              <div class="es_save_text"><span>Save $5.85<span> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                 <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">78.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">62.40</span><span class="es_saving_percent">15% OFF</span></span>
+                </div>
+               
+              </div>
+              <div class="bfprice">
+               $43.68 when you use code FRESHSTART
+                </div>
+
+            </div>
+            <div class="price_section 3_bottle_subscription" style="display: none;">
+              <div class="es_save_text"><span>Save $27.75<span> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                 <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">117.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">87.75</span><span class="es_saving_percent">24% OFF</span></span>
+                </div>
+               
+              </div>
+                 <div class="bfprice">
+               $62.01 when you use code FRESHSTART
+                </div>
+             
+            </div>
+            <div class="price_section 4_bottle_subscription" style="display: none;">
+              <div class="es_save_text"><span>Save $43.80<span> + FREE SHIPPING</span></span></div>
+              <div class="es_product-price">
+                  <!-- Old Price -->
+                <div class="es_old-price">
+                  <span>Total Price: $<span class="money">156.00</span></span>
+                </div>
+                <!-- Sell price with discount -->
+                <div class="es_sell-price">
+                  <span>$<span class="money">109.20</span><span class="es_saving_percent">28% OFF</span></span>
+                </div>
+              
+              </div>
+                <div class="bfprice">
+               $76.44 when you use code FRESHSTART
+                </div>
+
+            </div>
+          <!-- price section End -->
+             <!-- Counter Starting -->
+<div class="countdown-mob">
+    <div class="countdown-inner">
+      <img class="countdown-img" src="https://cdn.shopify.com/s/files/1/0028/0533/4131/files/fire-emoji.png?v=1716219531">
+      <div class="countdown-text"><strong>Sale Ends Soon:</strong><span class="entrytowin">  use code FRESHSTART at checkout for the above discounts + get $25 for a future order when you subscribe</span><span class="evergreen">  Use code FIRSTDAY25 at checkout for an extra 25% off!</span> - <span id="ten-countdown"></span></div>
+    </div>
+  </div>
+  <!-- Counter end -->
+
+  <!-- Start Cross Sell -->
+<div class="freq_box" id="fbt" style="margin-bottom: 30px;">
+  <div class="see_bought badge">
+        <p class="badge-text">MAXIMIZE YOUR SAVINGS</p>
+    </div>
+    <div class="freq_box_container">
+       <div class="above_text">
+          <div class="see_bought">
+             <p class="people_saw">
+                <span class="sold-in-emoji">🔥</span>
+                <span class="viewsInTheLastHour">27</span>
+                PEOPLE HAVE ADDED THIS IN THE LAST 24 HOURS
+             </p>
+          </div>
+       </div>
+       <div class="frequently-bought-together-item-container">
+          <div class="frequently-bought-together-item-details">
+             <div class="image_container">
+                <img src="https://firstday.com/cdn/shop/files/79.png?v=1712697493&width=2048" alt="Benefits">
+             </div>
+             <div class="product_info_container">
+                <h3 class="heading_third" style="font-family: 'gelica'">Men's Gut Guardian</h3>
+                <div class="benefittext">
+                  <div class="reviewstars" style="margin-top:0px;margin-bottom:3px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0028/0533/4131/files/Untitled_design_16.png?v=1695262027" alt="Five gold stars"> 
+                    <span class="review-text"> 
+                      <span id="reviews_number">543</span> reviews
+                    </span>
+                  </div>
+                    <span class="product-info-text">Unique 3-in-1 pre+ post+ probiotic that supports digestion, strength, power, and athletic performance</span>
+                </div>
+                <div class="price__pro">
+                  <div class="flexTest">
+                    <span class="pp_strike" style="display:contents">
+                      <strike>$49</strike>
+                    </span>        
+                    <span class="pp_real" style="display:contents">$24.50</span>
+                  </div>
+                  <div class="price-badge" id="otpPriceBadge" style="opacity: 1;">
+                      <p class="prev_p">50% OFF</p>   
+                  </div>             
+                </div>
+             </div>
+          </div>
+          <div class="checkbox_container" onclick="changeStatus()";>
+            <div class="checkbox_flex">
+              <div class="pp_check checkmark">
+                    <svg id="checkmarkSvg" style="display:none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 122.88 109.76" style="enable-background:new 0 0 122.88 109.76" xml:space="preserve" height="20" width="20"><style type="text/css">
+                        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#3492F6;}
+                    </style><g><path class="st0" d="M0,52.88l22.68-0.3c8.76,5.05,16.6,11.59,23.35,19.86C63.49,43.49,83.55,19.77,105.6,0h17.28 C92.05,34.25,66.89,70.92,46.77,109.76C36.01,86.69,20.96,67.27,0,52.88L0,52.88L0,52.88z"></path></g></svg>
+                    <input type="checkbox" id="extra_pro" class="extra_pro_checkbox" name="extra_pro" value="extra_pro" data-varid="40402200330338" style="pointer-events: none;">
+              </div>
+              <div class="pp_check checkbox_text" id="crossSellText">Try One-Time</div>
+            </div>   
+          </div>      
+       </div>
+    </div>
+ </div>
+  <!-- End Cross Sell -->
+          <!-- Checkout Button -->
+        <a id="lp-pom-button-13" href="https://firstday.com/cart/clear?return_to=/cart/add?items[][id]=39463537737826%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=1%26items[][selling_plan]=2882076770%26return_to=/checkout" class="lp-pom-button-13">SECURE CHECKOUT</a>
+         
+      </div>
+    </div>
+  </form>
+  </div>
+     <script>
+
+        document.getElementById('lp-pom-button-13').addEventListener("click", function(e) {
+        e.preventDefault()
+        var radio = document.getElementsByClassName('es_option-radio');
+        var purchaseType;
+            
+        for (var i=0; i < radio.length; i++) {
+        if(radio[i].classList.contains('active')){
+            purchaseType = radio[i].attributes.value.value
+        }
+        }      
+        if (document.getElementById('extra_pro').checked == true) {
+            if (purchaseType == 'javy') {
+                var url = document.getElementById('lp-pom-button-13').href
+                var baseUrl = url.split('return_to=/checkout')[0];
+                /*var kbbUrl = 'items[][id]=41743670444130%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=1%26items[][selling_plan]=2882076770%26return_to=/checkout'*/
+                var kbbUrl = 'items[][id]=41743670444130%26attributes[_is_subscription_purchase]=true%26attributes[_is_one_time_purchase]=false%26attributes[_method]=shipping%26items[][quantity]=1%26return_to=/checkout'
+                checkoutUrl = baseUrl + kbbUrl;
+                window.location.href = checkoutUrl
+            }
+            if (purchaseType == 'one_time') {
+                /* var url = document.getElementById('lp-pom-button-13').href
+                var cartUrl = 'https://firstday.com/cart/'
+                var currentUrl = url.split(cartUrl)[1];
+                var kbbUrl = '41743670444130:1,'
+                checkoutUrl = cartUrl + kbbUrl + currentUrl;
+                window.location.href = checkoutUrl */
+                var url = document.getElementById('lp-pom-button-13').href
+                var baseUrl = url.split('return_to=/checkout')[0];
+                var kbbUrl = 'items[][id]=41743670444130%26attributes[_is_subscription_purchase]=false%26attributes[_is_one_time_purchase]=true%26attributes[_method]=shipping%26items[][quantity]=1%26return_to=/checkout'
+                checkoutUrl = baseUrl + kbbUrl;
+                window.location.href = checkoutUrl                
+            }    
+        } else if (document.getElementById('extra_pro').checked == false) { 
+            window.location.href = document.getElementById('lp-pom-button-13').href
+        }
+    })
+
+
+
+    function changeStatus(){
+        if (document.getElementById('extra_pro').checked == false) {
+            document.getElementById('extra_pro').checked = true
+            document.getElementById('checkmarkSvg').style.display="block"
+        } else if (document.getElementById('extra_pro').checked == true) {
+            document.getElementById('extra_pro').checked = false
+            document.getElementById('checkmarkSvg').style.display="none"
+        }        
+    }
+    
+     var divsToshow = document.getElementsByClassName("price_section");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="none";
+      }
+      var divsToHide = document.getElementsByClassName("2_bottle_subscription");
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+          divsToHide[i].style.display="block";
+      }
+      var divsToHide = document.getElementsByClassName("quantity-subscription");
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+        divsToHide[i].style.display="block";
+      }
+      var divsToshow = document.getElementsByClassName("quantity-one_time");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="none";
+      }
+/*change on selection Frequency like one-time and subscription */
+function changeHandler(elem) {
+
+  for (var i = 0; i < elem.length; i++) {
+    elem[i].addEventListener("click", function(e) {
+      var current = this;
+       if (current.getAttribute("value") === 'one_time') {
+      document.querySelector('.es_option-swatch.active').classList.remove('active');
+      document.getElementById("one_time_quantity").classList.add("active");
+       
+    
+      var divsToHide = document.getElementsByClassName("quantity-subscription");
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+        divsToHide[i].style.display ="none";
+      }
+      var divsToshow = document.getElementsByClassName("quantity-one_time");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="block";
+      }
+      var divsToshow = document.getElementsByClassName("price_section");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="none";
+      }
+      var divsToHide = document.getElementsByClassName("2_bottle_one_time");
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+          divsToHide[i].style.display="block";
+      }
+         document.getElementById('es_product-form1').action = document.getElementById("one_time_quantity").getAttribute("url");
+    } else if ( current.getAttribute("value") === 'javy' ) {
+      document.querySelector('.es_option-swatch.active').classList.remove('active');
+      document.getElementById("subscription_quantity").classList.add("active");
+      
+      
+      var divsToHide = document.getElementsByClassName("quantity-subscription");
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+        divsToHide[i].style.display="block";
+      }
+      var divsToshow = document.getElementsByClassName("quantity-one_time");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="none";
+      }
+      var divsToshow = document.getElementsByClassName("price_section");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="none";
+      }
+      var divsToHide = document.getElementsByClassName("2_bottle_subscription");
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+          divsToHide[i].style.display="block";
+      }
+      document.getElementById('es_product-form1').action = document.getElementById("subscription_quantity").getAttribute("url");
+    } 
+     /* Add active class on selected value*/
+      for (var i = 0; i < elem.length; i++) {
+        if (current != elem[i]) {
+          elem[i].classList.remove('active');
+        } else if (current.classList.contains('active') === true) {
+          current.classList.remove('active');
+        } else {
+          document.getElementById('es_product-form1').action = current.getAttribute("url");
+          current.classList.add('active')
+        }
+      }
+      e.preventDefault();
+    });
+  };
+}
+changeHandler(document.querySelectorAll('.es_option-radio'));
+/*change on swatch selection options */
+function toggleItem(elem) {
+  for (var i = 0; i < elem.length; i++) {
+    elem[i].addEventListener("click", function(e) {
+      var current = this;
+      /*Hide all price section*/
+      var divsToshow = document.getElementsByClassName("price_section");
+      for(var i = 0; i < divsToshow.length; i++)
+      {
+        divsToshow[i].style.display="none";
+      }
+      /* Show price section as per selected swatch options */
+      var divsToHide = document.getElementsByClassName(current.getAttribute("value"));
+      for(var i = 0; i < divsToHide.length; i++)
+      {
+          divsToHide[i].style.display="block";
+      }
+      /* Add active class on selected value*/
+      for (var i = 0; i < elem.length; i++) {
+        if (current != elem[i]) {
+          elem[i].classList.remove('active');
+        } else if (current.classList.contains('active') === true) {
+          current.classList.remove('active');
+        } else {
+          document.getElementById('lp-pom-button-13').href = current.getAttribute("url");
+          current.classList.add('active')
+        }
+      }
+      e.preventDefault();
+    });
+  };
+}
+toggleItem(document.querySelectorAll('.es_option-swatch'));
+
+document.addEventListener("click", function(e) {
+    //console.dir(e.target)
+    if (e.target.classList.contains('sub')){
+      //console.log(document.getElementsByClassName('quantity-subscription es_variant-option es_option-swatch checkout-select-variant one_time es_badge-best_deal active')[0].getAttribute("url"))
+      document.getElementById('lp-pom-button-13').href = document.getElementsByClassName('quantity-subscription es_variant-option es_option-swatch checkout-select-variant one_time es_badge-best_deal active')[0].getAttribute("url");
+
+    }
+});
+</script>
+<script>
+function countdown( elementName, minutes, seconds )
+{
+    var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft > 1001 ) {
+           /* element.innerHTML = "Time is up!";
+        } else {*/
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+countdown( "ten-countdown", 10, 0 );
+
+// click fix for one time product
+ var optionBtns =  document.getElementsByClassName("es_variant-option");
+ for (var j = 0; j < optionBtns.length; j++) { 
+    optionBtns[j].addEventListener("click", function(e) {
+         if (this.getAttribute("value") === 'one_time') {
+                 setTimeout(() => {
+             document.getElementById("one_time_quantity").click();
+             document.getElementById("one_time_quantity").click();
+             
+                          }, "200")   
+                }
+
+    });
+}
+
+
+ </script>
+ 
+ 

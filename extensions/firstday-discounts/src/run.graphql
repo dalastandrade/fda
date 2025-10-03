@@ -1,0 +1,68 @@
+query RunInput {
+  cart {
+    lines {
+      quantity
+      discountPercent: attribute(key: "_discount_percent")  {
+          value
+      }
+      fullPrice: attribute(key: "_full_price")  {
+          value
+      }      
+      discount: attribute(key: "_discount")  {
+          value
+      }      
+      isTryNowSub: attribute(key: "_try_now_subscription")  {
+          value
+      }      
+      threeMonth: attribute(key: "_three_month")  {
+          value
+      }      
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          sku
+          product { 
+            id
+            hasAnyTag(tags:["GWP"]) 
+            metafield: metafield(key: "_product_type")  {
+                value
+            }
+          }
+        }
+      }
+      id
+      cost {
+        totalAmount {
+          amount
+        }
+        amountPerQuantity {
+          amount
+        }
+      }
+      sellingPlanAllocation {
+        priceAdjustments {
+          price {
+            amount
+          }
+        }
+        sellingPlan {
+          description
+          id
+          name
+        }
+      }      
+    }
+    buyerIdentity {
+      customer {
+        hasAnyTag(tags:["RATEST"])
+        numberOfOrders
+      }
+    }
+  }  
+  discountNode {
+    metafield(namespace: "$app:firstday-discounts", key: "function-configuration") {
+      value
+    }
+  }
+}

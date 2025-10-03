@@ -1,0 +1,73 @@
+query DeliveryInput {
+  cart {
+    cost {
+      totalAmount {
+        amount
+      }
+    }
+    method: attribute(key: "_method")  {
+        value
+    }          
+    deliveryGroups{
+      id
+      deliveryAddress {
+        countryCode
+      }
+      deliveryOptions{
+        code
+        cost {
+          amount
+          currencyCode
+        }
+        deliveryMethodType
+        description
+        handle
+        title
+      }
+    }
+    lines {
+      quantity
+      attribute: attribute(key: "_is_single_variant")  {
+          value
+      }
+      fullPrice: attribute(key: "_full_price")  {
+          value
+      } 
+      tryNow: attribute(key: "_is_try_now")  {
+          value
+      }           
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          sku
+          product { 
+            id
+          }
+        }
+      }
+      id
+      cost {
+        totalAmount {
+          amount
+        }
+      }
+      sellingPlanAllocation {
+        sellingPlan {
+          description
+          id
+          name
+        }
+      }      
+    }
+  }  
+  discount {
+    discountClasses
+    metafield(
+      namespace: "$app:example-discounts--ui-extension"
+      key: "function-configuration"
+    ) {
+      value
+    }
+  }
+}
